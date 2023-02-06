@@ -9,7 +9,7 @@
 <body>
    <header>
      <h1> Chicken </h1>
-     <p>Learn more about <a href="https://en.wikipedia.org/wiki/Chicken_as_food"> Chicken as food </a> <br></P>
+     <p><em>Learn more about <a href="https://en.wikipedia.org/wiki/Chicken_as_food"> Chicken as food </a> <br></em></P>
        
       
    </header>
@@ -69,13 +69,22 @@
      <h3> What is your favorite chicken? </h3>
      <fieldset>
      <legend> Your Choice </legend>
-     Username: <input type="text"  name="username" ><br><br>
-     Favorite One: <label>
+     <form>
+      <label>Username: <input type="text"  name="username" ><br><br>
+      </label>
+      Favorite One:<label>
                    <input type="checkbox"  name="type of chicken"  value="Fried Chicken">Fried Chicken
-                   <input type="checkbox"  name="type of chicken"  value="Roasted Chicken"> Roasted Chicken
-                   <input type="checkbox"  name="type of chicken"  value="Barbecue chicken"> Barbecue chicken
-                   <input type="checkbox"  name="type of chicken"  value="Chicken Curry"> Chicken Curry </label></br>
+                   </label>
+
+                   <label><input type="checkbox"  name="type of chicken"  value="Roasted Chicken"> Roasted Chicken
+                   </label>
+
+                   <label><input type="checkbox"  name="type of chicken"  value="Barbecue chicken"> Barbecue chicken
+                   </label>
+
+                   <label><input type="checkbox"  name="type of chicken"  value="Chicken Curry"> Chicken Curry </label></br>
      <br><br><button> Send </button>
+     </form>
      </fieldset>
 
      
