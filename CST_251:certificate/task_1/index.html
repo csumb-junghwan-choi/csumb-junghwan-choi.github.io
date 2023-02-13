@@ -1,0 +1,179 @@
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <title></title>
+</head>
+
+   <style>
+
+
+   body{
+  background-image: url("img/background.jpg")
+  text-align: center;
+  }
+
+   form {
+  max-width: 500px;
+  text-align: left;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  }
+
+   input {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  }
+
+  input-element {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  }
+
+  select {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  }
+
+
+
+   </style>
+
+<body>
+
+
+
+
+  <h1 id="title"> Survey title 
+  </h1>
+
+
+  <p id = "description">
+    survey description
+  </p>
+
+  <form id ="survey-form">
+    
+    <div>
+    <label id="name-label"
+    for="name">Name</label>
+   <input type = "text" id="name"
+   placeholder="Enter your name"
+   required
+   />
+   </div>
+    
+    <div>
+    <label id="email-label"      
+    for="email">Email</label>
+   <input 
+   type = "email"
+   placeholder="Enter your Email" 
+   id="email"
+   required
+   />
+   </div>
+
+
+    <div>
+    <label id="number-label"
+    for="number">Number</label>
+    <input 
+      type="number"  
+      id="number" 
+      min="0" 
+      max="99"
+      placeholder="Age"
+    />
+    </div>
+
+    <div>
+    <label id =" select-label">
+      Area
+    </label>
+    <select id = "dropdown" >
+       <option>US</option>
+       <option>Others</option>
+      </select> 
+    </div>
+
+    <div class= "input-element">
+      <label> Gender
+      </label>
+       <div>
+         <label><input type="radio"
+         name = "Gender"
+         Value = "She"/>She</label>
+       </div>
+       <div>
+         <label><input type="radio"
+         name = "Gender"
+         Value = "He"/>He</label>
+       </div>
+       <div>
+         <label><input type="radio"
+         name = "Gender"
+         Value = "They"/>They</label>
+       </div>
+
+    <div>
+      <label>Race</label>
+      <div>
+         <label><input type="checkbox"
+         name = "Race"
+         Value = "White"/>White</label>
+       </div>
+       <div>
+         <label><input type="checkbox"
+         name = "Race"
+         Value = "Hispanic"/>Hispanic</label>
+       </div>
+       <div>
+         <label><input type="checkbox"
+         name = "Race"
+         Value = "African-American"/>African-American</label>
+       </div>
+       <div>
+         <label><input type="checkbox"
+         name = "Race"
+         Value = "Asian"/>Asian</label>
+       </div>
+       <div>
+         <label><input type="checkbox"
+         name = "Race"
+         Value = "American Indian/Alaska Native"/>American Indian/Alaska Native</label>
+         <div>
+         <label><input type="checkbox"
+         name = "Race"
+         Value = "Multiple Race"/>Multiple Race</label>
+       </div>
+         
+       </div>
+   
+   
+   <div class="input-element">
+     <label>Additional Commets></label>
+     <textarea type ="text"></textarea>
+    </div>
+   <div>
+    <button 
+    type ="submit"
+    id="submit" 
+    id="survey-form">
+      Submit
+    </button>
+   </div>
+
+
+
+  </form>
+
+
+
+
+</body>
+</html>
