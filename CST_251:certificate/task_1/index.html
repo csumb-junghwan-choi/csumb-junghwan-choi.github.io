@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width">
-   <title>Your Information</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Task 1</title>
 
 
 
-    <style>
+  <style>
 
 
    body{
@@ -43,7 +43,7 @@
 
 
 
-  </style>
+</style>
 
 
 </head>
@@ -54,77 +54,103 @@
 
 
 
-  <h1 id="title"> Basic Information 
-  </h1>
+  <h1 id="title">Basic Information</h1>
 
 
   <p id = "description">
     Personal Information
   </p>
 
-  <form id ="survey-form">
+  <form id="survey-form">
+
+  <label id="name-label">
+    Your Name:
+    <br>
+    <br>
+  <input id="name" required type="text" placeholder="Please enter your name">
+  </label>
+  <br>
+  <br>
+
+  <label id="email-label">
+    Your Email:
+    <br>
+    <br>
+  <input id="email" required type="email" placeholder="Please enter your Email">
+  </label>
+  <br>
+  <br>
+
+  <label id="number-label">
+    Your Age:
+    <br>
+    <br>
+  <input id="number" type="number" placeholder="Age" min="1" max="125">
+  </label>
+  <br>
+  <br>
+
+  
+
+  <label id="dropdown-label">
+    Area
+    <br>
+    <br>
+  <select id="dropdown">
+    <option>US</option>
+    <option>Other</option>
+  </select>
+  </label>
+
+    <p>Gender</p>
+    
+  <div>
     
     <div>
-    <label id="name-label"
-    for="name">Name</label>
-   <input type = "text" id="name"
-   placeholder="Enter your name"
-   required
-   />
-   </div>
-    
-    <div>
-    <label id="email-label"      
-    for="email">Email</label>
-   <input 
-   type = "email"
-   placeholder="Enter your Email" 
-   id="email"
-   required
-   />
-   </div>
-
-
-    <div>
-    <label id="number-label"
-    for="number">Number</label>
-    <input 
-      type="number"  
-      id="number" 
-      min="0" 
-      max="99"
-      placeholder="Age"
-    />
-    </div>
-
-    <div>
-    <label id =" select-label">
-      Area
+    <label class="list">
+    <input type="radio" name="gender" value="Female">Female
     </label>
-    <select id = "dropdown" >
-       <option>US</option>
-       <option>Others</option>
-      </select> 
     </div>
-
-    <div class= "input-element">
-      <label> Gender
-      </label>
-       <div>
-         <label><input type="radio"
-         name = "Gender"
-         Value = "She"/>She</label>
-       </div>
-       <div>
-         <label><input type="radio"
-         name = "Gender"
-         Value = "He"/>He</label>
-       </div>
-       <div>
-         <label><input type="radio"
-         name = "Gender"
-         Value = "They"/>They</label>
-       </div>
+    
+    
+    <div>
+    <label class="list">
+    <input type="radio" name="gender" value="Male">Male
+    </label>
+    </div> 
+     
+    <div>
+    <label class="list">
+    <input type="radio" name="gender" value="Intersex">Intersex
+    </label>
+    </div>
+    
+    <div>
+    <label class="list">
+    <input type="radio" name="gender" value="Trans">Trans
+    </label>
+    </div>
+  
+    <div>
+    <label class="list">
+    <input type="radio" name="gender" value="Non-Conforming">Non-Conforming
+    </label>
+    </div> 
+    
+    
+    <div>
+    <label class="list">
+    <input type="radio" name="gender" value="Personal">Personal
+    </label>
+    </div>  
+  
+    <div>
+    <label class="list">
+    <input type="radio" name="gender" value="Eunuch">Eunuch
+    </label>
+    
+  
+  </div>
 
     <div>
       <label>Race</label>
