@@ -13,6 +13,8 @@ body{
 h1{
   font-size: 4rem;
   margin-bottom: 0;
+  background-color: royalblue;
+
 }
 
 h3{
@@ -45,7 +47,10 @@ img{
 
 #img-caption{
   margin: 15px 0 5px 0;
+  font-size: 14px;
 }
+
+class
 
 ul{
   max-width: 50px;
@@ -56,4 +61,8 @@ ul{
 
 li {
   margin: 16px 0;
+}
+
+h5{
+  font-size: 20px;
 }
